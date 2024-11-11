@@ -1,0 +1,233 @@
+html{
+    align-content: center;
+    max-width: 100%;
+    min-height: auto;
+    background-image:url("./img/map.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: sticky;
+    padding: 0px 250px 2px 250px;
+    
+}
+h1{
+    border-bottom:2px solid white;
+}
+header{
+    border-bottom: 0px solid black;
+    opacity: 100%;
+    font-family: "Gideon Roman", serif;
+    font-size:55px;
+    padding: .5%;
+    border-radius: 10px 10px 0px 0px ;
+    max-height: 100px;
+    text-align: center;
+}
+ #grid{
+    display:grid;
+    grid-template-areas:
+        "t t t"
+        "n c c"
+        "g p q";
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+} 
+#grid header{
+    grid-area: t;
+}
+#grid #nav{
+    grid-area: t;
+    
+}
+#grid #countdown{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area:c ;
+}
+#grid #inter_flight{
+    grid-area:g;
+}
+#grid #amster{
+    grid-area: p;
+}
+#grid #rom{
+    grid-area: q;
+}
+
+
+
+
+
+
+
+/* #cntdwn{
+display: contents;
+} */
+
+
+
+
+body{
+    display:grid;
+    min-height:900px;
+    color: white;
+    height: fit-content;
+    
+    
+}
+
+#dropdown{
+    background-color: aqua;
+    font-size: 25px;
+    }
+
+ /* #description{ 
+     text-align: center; 
+     margin-top: em; 
+     font-size:2em;      
+}  */
+
+
+/* Flight Styles */
+#inter_flight{
+    font-size: 1.5rem;
+    
+}
+#flight{
+    /* grid-area   : g; */
+    border:2px solid white;  
+    height: 229px;
+    width:325px;
+} 
+p{
+    padding-left: 5%;
+}
+
+
+
+/* Amsterdam Styles */
+#amster{
+    margin-left: 68%;
+    font-size: 1.5rem;
+}
+#amsterdam{
+    border:2px solid white;
+    height: 229px;
+    width:325px;
+} 
+
+
+/* Rome styles */
+#rom{
+    font-size: 1.5rem;
+}
+#rome{
+    border:2px solid white;
+    height: 229px;
+    width:325px;
+}
+
+
+
+
+
+
+
+h3{
+    background-color:
+     aliceblue;
+     
+}
+h2{
+    color:white;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "Gideon Roman", serif; 
+}
+
+/* nav{
+    max-width: fit-content;
+    max-width:  fit-content;
+    border: 2px solid white;
+    font-family: "Gideon Roman", serif;
+    color: white;
+    padding:7px;
+    background-color: rgba(192, 192, 192, 30%);
+    text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
+                 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white; */
+}
+
+/*Countdown Clock*/
+
+div#dateNow {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 10px;   
+    background-color: transparent;
+    border: hidden;
+    color: rgba(255, 192, 82, 0.8);
+    width: 140px;
+    font-size: 0.6em;
+    line-height: 1.1em;
+    font-family: "Gideon Roman", serif;
+    font-weight: normal;
+ }
+ 
+ /* Styles for the Countdown Clock */
+ 
+ div#countdown {
+    
+    background-color:   ;
+    border: 5px solid white;
+    background-color: rgba(192, 192, 192, 30%);
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-top: 15px;
+    padding-left: 0%;
+    padding-top: 15px;
+    bottom: 50px;
+    right: 15px;
+    width: 45%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+ 
+ }
+ 
+ div#countdown div {
+    display: block;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    font-family: "Gideon Roman", serif;
+    color: white;
+    margin: 0px 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
+                 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+ }
+ 
+ div#countdown div span {
+    font-size: 2em;   
+ }
+ 
+
+ footer{
+    margin-top: 20px;
+    border-top: 2px solid white;
+    font-family: "Gideon Roman", serif; 
+    font-size: 1.2em;
+    text-align: center;
+ }
+ 
+
+ /*Font Styles*/
+ .gideon-roman-regular {
+    font-family: "Gideon Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
